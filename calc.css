@@ -1,0 +1,14 @@
+:root{box-sizing:border-box;--color-primary:#07575B;--color-accent:#ff8945}
+body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif}
+.container{padding:15px;background:var(--color-primary);width:300px;margin:10% auto;display:grid;grid-template-columns:auto auto auto auto;grid-gap:10px 10px;border:1px solid #ececec}
+.container div{font-size:22px;height:30px;background:#fff;text-align:center;padding:10px;transition:all .1s;color:#333}
+.container div.clear:hover,.container div.digit:hover,.container div.symbol:hover{border-bottom:2px solid red;cursor:pointer}
+.container .screen{text-align:right;font-weight:700;grid-column:1/span 4;background-color:var(--color-accent);border:1px solid #fff;margin-bottom:1rem}
+.container .symbol{border:1px solid #ccc;grid-row-start:2;grid-column-start:4}
+.container .symbol.plus{grid-row-start:2}
+.container .symbol.minus{grid-row-start:3}
+.container .symbol.mulp{grid-row-start:4}
+.container .symbol.divide{grid-row-start:5}
+.container .symbol.equal{grid-row-start:5;grid-column-start:3;background:var(--color-accent);color:#fff;font-weight:700}
+.container .clear{grid-row-start:5;grid-column-start:1;}
+.click{background-color:var(--color-accent)!important;transform:scale(1);font-weight:600;border-bottom:2px solid red}
